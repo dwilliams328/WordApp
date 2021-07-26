@@ -34,6 +34,10 @@ android {
     }
 
     buildTypes {
+        debug{
+            buildConfigField "String", "LETTER", '"letter"'
+            buildConfigField "String", "SEARCH_PREFIX", '"https://www.google.com/search?q="'
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
