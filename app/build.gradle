@@ -24,6 +24,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
+        vectorDrawables.useSupportLibrary = true
         applicationId "com.example.wordsapp"
         minSdkVersion 19
         targetSdkVersion 30
